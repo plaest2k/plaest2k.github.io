@@ -73,15 +73,34 @@
                 </aside>
 
                 <main id="meat">
-                  <div id="about">
-                      <p><strong>About</strong></p>
-                      <hr>
-                      <p><strong>Sloane Hong</strong> blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blahblah blah blah blah blah blah blah blah blah</p><br>
-                      <hr>
-                  </div>
-                  <div>
-                      <img src=https://plaest2k.neocities.org/art/about/Sloane%20Hong%20800x800.jpg width="100%">
-                  </div>
+                    <div class="row"> 
+                      <div class="column">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/ditm%20vol1.jpg" style="width:100%" alt="&quot;The Three Resurrections of My Grandfather,&quot;<br>Illustration for K-Ming Chang, ft. in Death In The Mouth,<br>AD. Sloane Leong">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/hornypope.png" style="width:100%" alt="&quot;The Pope Who Wrote An Erotic Novel,&quot;<br>Header for Narratively,<br>AD. Vinnie Neuberg">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/tender_island.png" style="width:100%" alt="Personal comic panel test">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/1_288.png" style="width:100%" alt="Face sprites for personal RPG Maker project">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/IMG_0785_1000.jpg" style="width:100%" alt="&quot;The Secret Society of Self-Stingers,&quot;<br>Spot for Narratively,<br>AD. Vinnie Neuberg">
+                      </div>
+                      <div class="column">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/FuhfR5KaUAA6kUg.jpg" style="width:100%" alt="&quot;NYT Daily Spots,&quot;<br>30 illustrations for every day of April 2023,<br>ft. on page 3 of the New York Times">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/spot1_887.jpg" style="width:100%" alt="&quot;How International Study Molds Global Citizens,&quot;<br>spot commissioned by Daylight Creative for Ministry of Education,<br>ft. in Spinoff.co.nz">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/indiepocalypse-final.jpg" style="width:100%" alt="&quot;Indiepocalypse, Issue 38,&quot;<br>cover illustration for indipendant games anthology project">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/2019-07-31-07.40.02-1.jpg" style="width:100%" alt="Tattoo">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/VlWFHgD7.jpg-medium_521.jpg" style="width:100%" alt="&quot;The Secret Society of Self-Stingers,&quot;<br>Spot for Narratively,<br>AD. Vinnie Neuberg">
+                      </div>  
+                      <div class="column">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/tumblr_48ccd8c76ff0382e6e840ffdbfedb76c_0dca3db6_2048.jpg" style="width:100%" alt="Personal 1-page comic experiment">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/quilt-illustration.png" style="width:100%" alt="Quilt illustration for &quot;badapple dot gay,&quot;<br>a grass-roots queer publication">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/Screen-Shot-2020-09-20-at-2.01.22-PM1_1000.png" style="width:100%" alt="&quot;Rook-y Moves,&quot;<br>spot illustration for The New York Times,<br>AD. Vinnie Neuberg">
+                        <img class="myImages" id="myImg" src="https://plaest2k.neocities.org/art/landing%20gallery/spot3_630.jpg" style="width:100%" alt="&quot;How International Study Molds Global Citizens,&quot;<br>spot commissioned by Daylight Creative for Ministry of Education,<br>ft. in Spinoff.co.nz">
+                      </div>
+                      <div id="myModal" class="modal">
+                        <span class="close">&para;</span>
+                        <div id="caption"></div>
+                        <img class="modal-content" id="img01">
+
+                      </div>
+                    </div>
                 </main>
 
                 <!---<aside id="rightSidebar">
@@ -120,6 +139,12 @@
 
             }
 
+            /* below this line is CSS for the layout */
+
+            /* this is a CSS comment
+    to uncomment a line of CSS, remove the * and the /
+    before and after the text */
+
 
             /* the "container" is what wraps your entire website */
             /* if you want something (like the header) to be Wider than
@@ -156,22 +181,16 @@
                 line-height: 175%;
             }
 
-            #portfolionav {
+             #portfolionav {
                 margin-top: 10px;
                 font-size: 11px;
                 font-variation-settings: "wght" 3, "slnt" 1, "VVLM" -1, "NSSS" 2, "OPTS" 0;
                 line-height: 200%;
             }
 
-            #meat {
+             #meat {
                 margin-left: 1%;
                 margin-right: 1%;
-                max-width: 500px;
-                width: 100%;
-            }
-
-            #about {
-                margin-bottom: 10px;
             }
 
             /* navigation section!! */
@@ -356,6 +375,162 @@
                   text-align: center;
                   padding: 0px;
                 }
+                
+                .row {
+                  display: -ms-flexbox; /* IE10 */
+                  display: flex;
+                  -ms-flex-wrap: wrap; /* IE10 */
+                  flex-wrap: wrap;
+                  padding: 0 4px;
+                }
+                
+                /* Create three equal columns that sits next to each other */
+                .column {
+                  -ms-flex: 33.33%; /* IE10 */
+                  flex: 33.33%;
+                  max-width: 33.33%;
+                  padding: 0 4px;
+                }
+                
+                .column img {
+                  margin-top: 8px;
+                  vertical-align: middle;
+                  width: 100%;
+                }
+                
+                /* Responsive layout - makes a two column-layout instead of four columns */
+                @media screen and (max-width: 1000px) {
+                  .column {
+                    -ms-flex: 50%;
+                    flex: 50%;
+                    max-width: 50%;
+                  }
+                }
+                
+                /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+                @media screen and (max-width: 600px) {
+                  .column {
+                    -ms-flex: 100%;
+                    flex: 100%;
+                    max-width: 100%;
+                  }
+                }
+
+                /* modal shit */                
+                #myImg {
+                  cursor: pointer;
+                  transition: 0.3s;
+                }
+                
+                #myImg:hover {
+                  pacity: 0.7;
+                }
+                
+                /* The Modal (background) */
+                .modal {
+                  display: none; /* Hidden by default */
+                  position: fixed; /* Stay in place */
+                  z-index: 1; /* Sit on top */
+                  padding-top: 50px; /* Location of the box */
+                  left: 0;
+                  top: 0;
+                  width: 100%; /* Full width */
+                  height: 100%; /* Full height */
+                  overflow: auto; /* Enable scroll if needed */
+                  background-color: rgb(0,0,0); /* Fallback color */
+                  background-color: rgba(0,0,0,0.84); /* Black w/ opacity */
+                }
+                
+                /* Modal Content (image) */
+                .modal-content {
+                  margin: auto;
+                  display: block;
+                  width: 80%;
+                  max-width: 1200px;
+                }
+                
+                /* Caption of Modal Image */
+                #caption {
+                  margin: auto;
+                  display: block;
+                  width: 90%;
+                  max-width: 1080px;
+                  text-align: left;
+                  color: #fff;
+                  margin-bottom: 20px;
+                  font-size: 14px;
+                  font-variation-settings: "wght" 3, "slnt" 1, "VVLM" -1, "NSSS" 2, "OPTS" 0;
+                  line-height: 175%
+                }
+                
+                /* Add Animation */
+                .modal-content, #caption {  
+                  animation-name: zoom;
+                  animation-duration: 0.6s;
+                }
+                
+                @keyframes zoom {
+                  from {
+                      transform:scale(0)
+                  } 
+                  to {
+                    transform:scale(1)
+                  }
+                }
+
+                /* The Close Button */
+                .close {
+                  position: fixed;
+                  top: 25px;
+                  right: 30px;
+                  color: #f1f1f1;
+                  font-size: 30px;
+                  font-variation-settings: "wght" 3, "slnt" 0, "VVLM" -1, "NSSS" 2, "OPTS" 0;
+                  transition: 0.3s;
+                }
+                
+                .close:hover,
+                .close:focus {
+                  color: #bbb;
+                  text-decoration: none;
+                  cursor: pointer;
+                }
+                
+                /* 100% Image Width on Smaller Screens */
+                @media only screen and (max-width: 700px){
+                  .modal-content {
+                    width: 100%;
+                  }
+                }
         </style>
+
+        <script>
+                // create references to the modal...
+                var modal = document.getElementById('myModal');
+                // to all images -- note I'm using a class!
+                var images = document.getElementsByClassName('myImages');
+                // the image in the modal
+                var modalImg = document.getElementById("img01");
+                // and the caption in the modal
+                var captionText = document.getElementById("caption");
+                
+                // Go through all of the images with our custom class
+                for (var i = 0; i < images.length; i++) {
+                  var img = images[i];
+                  // and attach our click listener for this image.
+                  img.onclick = function(evt) {
+                    console.log(evt);
+                    modal.style.display = "block";
+                    modalImg.src = this.src;
+                    captionText.innerHTML = this.alt;
+                  }
+                }
+                
+                var span = document.getElementsByClassName("close")[0];
+                
+                span.onclick = function() {
+                  modal.style.display = "none";
+                }
+        </script>
 </div>
 </html>
